@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e0957b;}
+.s1 { color: #c9c9d1;}
+.s2 { color: #e0957b; font-weight: bold;}
+.s3 { color: #c9c9d1;}
+.s4 { color: #62a362;}
+.s5 { color: #4dacf0;}
+.s6 { color: #676773;}
+</style>
+</head>
+<body bgcolor="#1d1d26">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Main {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Scanner scanner </span><span class="s3">= </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s2">;</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Which month that you want to count days? &quot;</span><span class="s1">)</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">month </span><span class="s3">= </span><span class="s1">scanner.nextInt()</span><span class="s2">;</span>
+        <span class="s1">String daysInMonth</span><span class="s2">;;</span>
+        <span class="s0">switch </span><span class="s1">(month) {</span>
+            <span class="s0">case </span><span class="s5">2</span><span class="s3">:</span>
+<span class="s6">//                System.out.print(&quot;The month '2' has 28 or 29 days!&quot;);</span>
+                <span class="s1">daysInMonth </span><span class="s3">= </span><span class="s4">&quot;28 or 29&quot;</span><span class="s2">;</span>
+                <span class="s0">break</span><span class="s2">;</span>
+            <span class="s0">case </span><span class="s5">1</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">3</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">5</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">7</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">8</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">10</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">12</span><span class="s3">:</span>
+<span class="s6">//                System.out.print(&quot;the month '&quot; + month + &quot;'has 31 days!&quot;);</span>
+                <span class="s1">daysInMonth </span><span class="s3">= </span><span class="s4">&quot;31&quot;</span><span class="s2">;</span>
+                <span class="s0">break</span><span class="s2">;</span>
+            <span class="s0">case </span><span class="s5">4</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">6</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">9</span><span class="s3">:</span>
+            <span class="s0">case </span><span class="s5">11</span><span class="s3">:</span>
+<span class="s6">//                System.out.println(&quot;The mouth'&quot; + month + &quot;'has 30 days!&quot;);</span>
+                <span class="s1">daysInMonth </span><span class="s3">= </span><span class="s4">&quot;30&quot;</span><span class="s2">;</span>
+                <span class="s0">break</span><span class="s2">;</span>
+            <span class="s0">default</span><span class="s3">:</span>
+<span class="s6">//                System.out.println(&quot;Invalid input!&quot;);</span>
+                <span class="s1">daysInMonth </span><span class="s3">= </span><span class="s4">&quot;&quot;</span><span class="s2">;</span>
+<span class="s6">//                break;</span>
+
+        <span class="s1">}</span>
+        <span class="s0">if </span><span class="s1">(</span><span class="s3">!</span><span class="s1">daysInMonth.equals(</span><span class="s4">&quot;&quot;</span><span class="s1">)) System.out.printf(</span><span class="s4">&quot;The month '%d' has %s days!&quot;</span><span class="s2">, </span><span class="s1">month</span><span class="s2">, </span><span class="s1">daysInMonth)</span><span class="s2">;</span>
+        <span class="s0">else </span><span class="s1">System.out.print(</span><span class="s4">&quot;Invalid input!&quot;</span><span class="s1">)</span><span class="s2">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>
